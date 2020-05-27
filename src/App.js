@@ -2,7 +2,7 @@ import React from "react";
 import Routes from "./routes";
 
 const App = () => (
-  <div>
+  <div style={{ position: "relative" }}>
     <Routes />
   </div>
 );

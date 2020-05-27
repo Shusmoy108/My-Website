@@ -1,7 +1,7 @@
 //Comment.js
 import React, { Component } from "react";
 import Header from "../Components/Header/Header";
-import Product from "../Components/Product/Product";
+import Footer from "./Footer/Footer";
 
 export default class LandingPage extends Component {
   constructor(props) {
@@ -21,13 +21,18 @@ export default class LandingPage extends Component {
 
   render() {
     return (
-      <div style={{ margin: 0 }}>
+      <div
+        style={{
+          margin: 0,
+          //height: "100%",
+          display: "flex",
+          flexDirection: "column",
+          minHeight: "100vh",
+        }}
+      >
         <Header />
-        <div style={{ backgroundColor: "black" }}>
-          <Product />
-        </div>
 
-        <h1> body </h1>
+        <Footer />
       </div>
     );
   }

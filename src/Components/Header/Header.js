@@ -1,236 +1,257 @@
 import React from "react";
-import { fade, makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
-import IconButton from "@material-ui/core/IconButton";
-import Typography from "@material-ui/core/Typography";
-import InputBase from "@material-ui/core/InputBase";
-import Badge from "@material-ui/core/Badge";
-import MenuItem from "@material-ui/core/MenuItem";
-import Menu from "@material-ui/core/Menu";
+import Button from "@material-ui/core/Button";
 import MenuIcon from "@material-ui/icons/Menu";
-import SearchIcon from "@material-ui/icons/Search";
-import AccountCircle from "@material-ui/icons/AccountCircle";
-import MailIcon from "@material-ui/icons/Mail";
-import NotificationsIcon from "@material-ui/icons/Notifications";
-import MoreIcon from "@material-ui/icons/MoreVert";
-import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
-const useStyles = makeStyles((theme) => ({
-  grow: {
-    flexGrow: 1,
-  },
-  menuButton: {
-    marginRight: theme.spacing(2),
-  },
-  title: {
-    display: "none",
-    marginRight: 10,
-    [theme.breakpoints.up("sm")]: {
-      display: "block",
-    },
-  },
-  search: {
-    position: "relative",
-    borderRadius: theme.shape.borderRadius,
-    backgroundColor: fade(theme.palette.common.white, 0.15),
-    "&:hover": {
-      backgroundColor: fade(theme.palette.common.white, 0.25),
-    },
-    marginRight: theme.spacing(2),
-    marginLeft: 0,
-    width: "100%",
-    [theme.breakpoints.up("sm")]: {
-      marginLeft: theme.spacing(3),
-      width: "auto",
-    },
-  },
-  searchIcon: {
-    padding: theme.spacing(0, 2),
-    height: "100%",
-    position: "absolute",
-    pointerEvents: "none",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  inputRoot: {
-    color: "inherit",
-  },
-  inputInput: {
-    padding: theme.spacing(1, 1, 1, 0),
-    // vertical padding + font size from searchIcon
-    paddingLeft: `calc(1em + ${theme.spacing(4)}px)`,
-    transition: theme.transitions.create("width"),
-    width: "100%",
-    [theme.breakpoints.up("md")]: {
-      width: "20ch",
-    },
-  },
-  sectionDesktop: {
-    display: "none",
-    [theme.breakpoints.up("md")]: {
-      display: "flex",
-    },
-  },
-  sectionMobile: {
-    display: "flex",
-    [theme.breakpoints.up("md")]: {
-      display: "none",
-    },
-  },
-}));
+import SendIcon from "@material-ui/icons/Send";
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import Home from "../Home/Home";
+import PropTypes from "prop-types";
+import { withStyles } from "@material-ui/core/styles";
+import styles from "./headerStyle";
+import pp from "../../Assets/pp.jpg";
+import {
+  ListItem,
+  List,
+  Drawer,
+  ExpansionPanel,
+  Typography,
+  ExpansionPanelSummary,
+  ExpansionPanelDetails,
+  Popover,
+  MenuItem,
+  Avatar,
+} from "@material-ui/core";
+import Profile from "../Profile/Profile";
+import Teaching from "../Teaching/Teaching";
+import Contact from "../Contact/Contact";
+import AcademicProject from "../Project/AcdemicProject";
+import Webprojects from "../Project/Webproject";
+import Mobileprojects from "../Project/Mobileproject";
+import Research from "../Research/Research";
 
-export default function PrimarySearchAppBar() {
-  const classes = useStyles();
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
-
-  const isMenuOpen = Boolean(anchorEl);
-  const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
-
-  const handleProfileMenuOpen = (event) => {
-    setAnchorEl(event.currentTarget);
+class Header extends React.Component {
+  state = {
+    anchor: false,
+    page: 0,
+    open: null,
+  };
+  handleClose = () => {
+    this.setState({ anchorEl: null, project: null });
   };
 
-  const handleMobileMenuClose = () => {
-    setMobileMoreAnchorEl(null);
+  handleOpen = (event) => {
+    this.setState({ open: event.currentTarget });
   };
-
-  const handleMenuClose = () => {
-    setAnchorEl(null);
-    handleMobileMenuClose();
+  handleClose = () => {
+    this.setState({ open: null });
   };
-
-  const handleMobileMenuOpen = (event) => {
-    setMobileMoreAnchorEl(event.currentTarget);
+  handleMenu = () => {
+    this.setState({ anchor: !this.state.anchor });
   };
-
-  const menuId = "primary-search-account-menu";
-  const renderMenu = (
-    <Menu
-      anchorEl={anchorEl}
-      anchorOrigin={{ vertical: "top", horizontal: "right" }}
-      id={menuId}
-      keepMounted
-      transformOrigin={{ vertical: "top", horizontal: "right" }}
-      open={isMenuOpen}
-      onClose={handleMenuClose}
-    >
-      <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
-      <MenuItem onClick={handleMenuClose}>My account</MenuItem>
-    </Menu>
-  );
-
-  const mobileMenuId = "primary-search-account-menu-mobile";
-  const renderMobileMenu = (
-    <Menu
-      anchorEl={mobileMoreAnchorEl}
-      anchorOrigin={{ vertical: "top", horizontal: "right" }}
-      id={mobileMenuId}
-      keepMounted
-      transformOrigin={{ vertical: "top", horizontal: "right" }}
-      open={isMobileMenuOpen}
-      onClose={handleMobileMenuClose}
-    >
-      <MenuItem>
-        <IconButton aria-label="show 4 new mails" color="inherit">
-          <Badge badgeContent={4} color="secondary">
-            <MailIcon />
-          </Badge>
-        </IconButton>
-        <p>Messages</p>
-      </MenuItem>
-      <MenuItem>
-        <IconButton aria-label="show 11 new notifications" color="inherit">
-          <Badge badgeContent={11} color="secondary">
-            <NotificationsIcon />
-          </Badge>
-        </IconButton>
-        <p>Notifications</p>
-      </MenuItem>
-      <MenuItem onClick={handleProfileMenuOpen}>
-        <IconButton
-          aria-label="account of current user"
-          aria-controls="primary-search-account-menu"
-          aria-haspopup="true"
-          color="inherit"
-        >
-          <AccountCircle />
-        </IconButton>
-        <p>Profile</p>
-      </MenuItem>
-    </Menu>
-  );
-
-  return (
-    <div className={classes.grow}>
-      <AppBar position="static">
-        <Toolbar>
-          <IconButton
-            edge="start"
-            className={classes.menuButton}
-            color="inherit"
-            aria-label="open drawer"
-          >
-            <MenuIcon />
-          </IconButton>
-          <Typography className={classes.title} variant="h6" noWrap>
-            E-Commerce
-          </Typography>
-          <Typography className={classes.title} variant="h6" noWrap>
-            Home
-          </Typography>
-          <Typography className={classes.title} variant="h6" noWrap>
-            Favourites
-          </Typography>
-
-          <div className={classes.grow} />
-          <div className={classes.sectionDesktop}>
-            <div className={classes.search}>
-              <div className={classes.searchIcon}>
-                <SearchIcon />
-              </div>
-              <InputBase
-                placeholder="Search…"
-                classes={{
-                  root: classes.inputRoot,
-                  input: classes.inputInput,
-                }}
-                inputProps={{ "aria-label": "search" }}
-              />
-            </div>
-
-            <IconButton aria-label="show 17 new notifications" color="inherit">
-              <Badge badgeContent={17} color="secondary">
-                <ShoppingCartIcon />
-              </Badge>
-            </IconButton>
-            <IconButton
-              edge="end"
-              aria-label="account of current user"
-              aria-controls={menuId}
+  handlePage = (value) => {
+    this.setState({ anchor: false, page: value, open: null });
+  };
+  render() {
+    const { classes } = this.props;
+    const { open, anchor } = this.state;
+    return (
+      <div style={{ marginBottom: "2%" }}>
+        <AppBar position="static" className={classes.sectionDesktop}>
+          <Toolbar>
+            <Button className={classes.item} onClick={() => this.handlePage(0)}>
+              Home
+            </Button>
+            <Button className={classes.item} onClick={() => this.handlePage(1)}>
+              Profile
+            </Button>
+            <Button className={classes.item} onClick={() => this.handlePage(2)}>
+              Research
+            </Button>
+            <Button className={classes.item} onClick={() => this.handlePage(3)}>
+              Teaching
+            </Button>
+            <Button
+              className={classes.item}
+              onClick={this.handleOpen}
               aria-haspopup="true"
-              onClick={handleProfileMenuOpen}
-              color="inherit"
+              aria-owns={open ? "simple-menu" : null}
+              //onClick={() => this.handleOpen()}
+            >
+              Project
+            </Button>
+
+            <Popover
+              id="simple-menu"
+              anchorEl={open}
+              open={Boolean(open)}
+              anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
+              transformOrigin={{
+                horizontal: "center",
+                vertical: "top",
+              }}
+              onClose={this.handleClose}
+            >
+              <MenuItem
+                className={classes.listItem}
+                onClick={() => this.handlePage(5)}
+              >
+                <SendIcon /> Web Projects
+              </MenuItem>
+              <MenuItem
+                className={classes.listItem}
+                onClick={() => this.handlePage(6)}
+              >
+                <SendIcon /> Android Applications
+              </MenuItem>
+              <MenuItem
+                onClick={() => this.handlePage(4)}
+                className={classes.listItem}
+              >
+                <SendIcon />
+                Academic Projects
+              </MenuItem>
+            </Popover>
+
+            <Button className={classes.item} onClick={() => this.handlePage(7)}>
+              Contact
+            </Button>
+          </Toolbar>
+        </AppBar>
+        <AppBar position="static" className={classes.sectionMobile}>
+          <Toolbar style={{ display: "flex" }}>
+            <Button
+              className={classes.menu}
+              onClick={this.handleMenu}
+              variant="outlined"
+              color="white"
             >
               <MenuIcon />
-            </IconButton>
-          </div>
-          <div className={classes.sectionMobile}>
-            <IconButton
-              aria-label="show more"
-              aria-controls={mobileMenuId}
-              aria-haspopup="true"
-              onClick={handleMobileMenuOpen}
-              color="inherit"
+            </Button>
+            <Typography variant="h5" className={classes.title}>
+              Shusmoy Chowdhury
+            </Typography>
+          </Toolbar>
+          <Drawer
+            anchor="left"
+            open={anchor}
+            onClose={this.handleMenu}
+            className={classes.drawer}
+          >
+            <div className={classes.avater}>
+              <Avatar
+                alt="Shusmoy Chowdhury"
+                src={pp}
+                className={classes.large}
+              />
+            </div>
+            <List
+              style={{
+                flex: 10,
+              }}
             >
-              <MoreIcon />
-            </IconButton>
-          </div>
-        </Toolbar>
-      </AppBar>
-      {renderMobileMenu}
-      {renderMenu}
-    </div>
-  );
+              <ListItem>
+                <Button
+                  className={classes.listItem}
+                  onClick={() => this.handlePage(0)}
+                >
+                  Home
+                </Button>
+              </ListItem>
+              <ListItem>
+                <Button
+                  className={classes.listItem}
+                  onClick={() => this.handlePage(1)}
+                >
+                  Profile
+                </Button>
+              </ListItem>
+              <ListItem>
+                <Button
+                  className={classes.listItem}
+                  onClick={() => this.handlePage(2)}
+                >
+                  Research
+                </Button>
+              </ListItem>
+              <ListItem>
+                <Button
+                  className={classes.listItem}
+                  onClick={() => this.handlePage(3)}
+                >
+                  Teaching
+                </Button>
+              </ListItem>
+              <ListItem>
+                <ExpansionPanel style={{ boxShadow: "none" }}>
+                  <ExpansionPanelSummary
+                    expandIcon={<ExpandMoreIcon />}
+                    style={{ padding: 0 }}
+                  >
+                    <Button
+                      className={classes.listItem}
+                      //onClick={() => this.handleOpen()}
+                    >
+                      Project
+                    </Button>
+                  </ExpansionPanelSummary>
+                  <ExpansionPanelDetails style={{ padding: 0 }}>
+                    <List>
+                      <ListItem>
+                        <Button
+                          className={classes.listItem}
+                          onClick={() => this.handlePage(5)}
+                        >
+                          Web Projects
+                        </Button>
+                      </ListItem>
+                      <ListItem>
+                        <Button
+                          className={classes.listItem}
+                          onClick={() => this.handlePage(6)}
+                        >
+                          Android Applications
+                        </Button>
+                      </ListItem>
+                      <ListItem>
+                        <Button
+                          className={classes.listItem}
+                          onClick={() => this.handlePage(4)}
+                        >
+                          Academic Projects
+                        </Button>
+                      </ListItem>
+                    </List>
+                  </ExpansionPanelDetails>
+                </ExpansionPanel>
+              </ListItem>
+
+              <ListItem>
+                <Button
+                  className={classes.listItem}
+                  onClick={() => this.handlePage(7)}
+                >
+                  Contact
+                </Button>
+              </ListItem>
+            </List>
+          </Drawer>
+        </AppBar>
+        {this.state.page === 0 && <Home />}
+        {this.state.page === 1 && <Profile />}
+        {this.state.page === 2 && <Research />}
+        {this.state.page === 3 && <Teaching />}
+        {this.state.page === 4 && <AcademicProject />}
+        {this.state.page === 5 && <Webprojects />}
+        {this.state.page === 6 && <Mobileprojects />}
+        {this.state.page === 7 && <Contact />}
+      </div>
+    );
+  }
 }
+
+Header.propTypes = {
+  classes: PropTypes.object.isRequired,
+};
+
+export default withStyles(styles)(Header);

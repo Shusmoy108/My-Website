@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  position: relative;
+  font-family: "Cinzel";
+  font-family: "Arcon";
+}
+
+@font-face {
+  font-family: "Cinzel";
+  src: url("./Assets/cinzel/Cinzel-Regular.otf");
+}
+@font-face {
+  font-family: "Arcon";
+  src: url("./Assets/arcon/Arcon-Regular.otf");
+}
