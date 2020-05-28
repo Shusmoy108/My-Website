@@ -2,7 +2,7 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://Shusmoy108.github.io/My-Website",
+  "homepage": "https://shusmoy108.github.io/My-Website/",
   "dependencies": {
     "@material-ui/core": "^4.9.14",
     "@material-ui/icons": "^4.9.1",
