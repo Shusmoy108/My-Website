@@ -7,9 +7,9 @@ import NotFound from "./Components/NotFound/NotFound";
 const Main = () => (
   <main>
     <Switch>
-      <Route exact path="*" component={LandingPage} />
+      <Route exact path="/" component={LandingPage} />
       <Route path="/about" component={About} />
-      {/* <Route path='*' component={NotFound}/> */}
+      <Route path="*" component={NotFound} />
     </Switch>
   </main>
 );

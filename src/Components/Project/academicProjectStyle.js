@@ -1,5 +1,15 @@
 const styles = (theme) => ({
-  root: { display: "flex", marginTop: "2%" },
+  root: {
+    display: "block",
+    //marginLeft: "5%",
+    margin: "70px 5% 5% 5%",
+
+    [theme.breakpoints.up("sm")]: {
+      // display: "flex",
+      display: "flex",
+      marginTop: "2%",
+    },
+  },
   root2: {
     flex: 5,
     [theme.breakpoints.up("sm")]: {
@@ -18,6 +28,7 @@ const styles = (theme) => ({
   },
   body: {
     fontSize: 12,
+    textAlign: "justify",
     [theme.breakpoints.up("sm")]: {
       fontSize: 15,
     },

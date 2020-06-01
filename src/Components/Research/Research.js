@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
 import styles from "./researchStyle";
+import protrack from "../../Assets/ProTrack.pdf";
 import {
   Typography,
   Divider,
@@ -17,7 +18,12 @@ class Research extends React.Component {
     return (
       <div className={classes.root}>
         <div className={classes.grow}></div>
+
         <div className={classes.root2}>
+          <Typography variant="h5" className={classes.title}>
+            Current Research
+          </Typography>
+          <Divider></Divider>
           <List>
             <ListItem>
               <ListItemIcon style={{ fontSize: 20 }}>1</ListItemIcon>
@@ -55,7 +61,10 @@ class Research extends React.Component {
                   <br />
                 </b>
                 <b className={classes.writings2}>
-                  Supervisor: Dr. A. B. M. Alim Al Islam, Professor, BUET
+                  Supervisor: Dr. A. B. M. Alim Al Islam, Professor, BUET <br />
+                </b>
+                <b className={classes.writings2}>
+                  Partner: Ananya Bhattacharjee, Lecturer, Eastern University
                 </b>
                 <Typography variant="body1" className={classes.body}>
                   In developing countries like bangladesh the students below
@@ -89,9 +98,53 @@ class Research extends React.Component {
                 </Typography>
               </ListItemText>
             </ListItem>
-
+          </List>
+          <Typography variant="h5" className={classes.title}>
+            Completed Research
+          </Typography>
+          <Divider></Divider>
+          <List>
             <ListItem>
-              <ListItemIcon style={{ fontSize: 20 }}>3</ListItemIcon>
+              <ListItemIcon style={{ fontSize: 20 }}>1</ListItemIcon>
+              <ListItemText>
+                <b className={classes.writings1}>
+                  ProTrack
+                  <br />
+                </b>
+                <b className={classes.writings2}>
+                  Web-Based Generic Project Management Software
+                </b>
+                <Typography variant="body1" className={classes.body}>
+                  Every Project has a unique structure. The project manager or
+                  leader is always responsible for the structure of the
+                  project.Every project manager needs a suprime freedom of
+                  choice for their project structure design as every project is
+                  unique comparing to other. In our software we have tried to
+                  give such freedom to the user. We have divided every project
+                  into task and every task into subtask. In our project we can
+                  add more depth according to user specification.At first The
+                  project lead will create a project structure with different
+                  number of task and every task with various number of subtask.
+                  For the subtask we have introduced here 4 types of fields such
+                  as text, number, checkbox, dropdown list. More types such as
+                  image videos files can be added according to user
+                  specification. After designing the project structure user can
+                  create project based on this project stracture and assignerd
+                  task and subtask according to theor requsition. The project
+                  lead can also check the current status of the project(how much
+                  has been completed) here. He can also rerun a faulty project
+                  and also findout the fault through the system. In the end we
+                  can say this system as a user specific generic project
+                  management software. You can find all the detailed features{" "}
+                  <a href={protrack} target="_blank" rel="noopener noreferrer">
+                    here.
+                    <br />
+                  </a>
+                </Typography>
+              </ListItemText>
+            </ListItem>
+            <ListItem>
+              <ListItemIcon style={{ fontSize: 20 }}>2</ListItemIcon>
               <ListItemText>
                 <b className={classes.writings1}>
                   Making Bangla OCR(Optical Character Recognition) for all
@@ -100,24 +153,26 @@ class Research extends React.Component {
                 </b>
                 <b className={classes.writings2}>
                   Supervisor: Dr.Md Sohel Rahman, Professor, BUET
+                  <br />
                 </b>
+                <b className={classes.writings2}>Partner: Sabab Awosaf, BUET</b>
                 <Typography variant="body1" className={classes.body}>
                   Now a Days Bengali is one of the most spoken language in the
                   world. Around 200 million people all over the world have been
-                  speaking in this language.Being the 5th Posi- tion and
-                  sweetest language in the world declared by the UNESCO Bengali
-                  is the national language in Bangladesh and one of the major
-                  languages in India. Bangla is a rich and old language.
-                  Converting hard document, such as newspaper, printed book into
-                  editable text to modify or extend is the normal practice
-                  nowadays, OCR is the process of converting printed text images
-                  into editable text. In our thesis work we have tried to make a
-                  complete Optical Character Recognition for Bangla Text. In our
-                  first thesis work we have introduced a new segmentation
-                  technique for bangla text. The segmentation of bangla text is
-                  not easy as other language because of many connecting word in
-                  bangla. Moreover if the image is not taken straight the output
-                  may be wrong. In our technique we first check if the image is
+                  speaking in this language.Being the 5th Position and sweetest
+                  language in the world declared by the UNESCO Bengali is the
+                  national language in Bangladesh and one of the major languages
+                  in India. Bangla is a rich and old language. Converting hard
+                  document, such as newspaper, printed book into editable text
+                  to modify or extend is the normal practice nowadays, OCR is
+                  the process of converting printed text images into editable
+                  text. In our thesis work we have tried to make a complete
+                  Optical Character Recognition for Bangla Text. In our first
+                  thesis work we have introduced a new segmentation technique
+                  for bangla text. The segmentation of bangla text is not easy
+                  as other language because of many connecting word in bangla.
+                  Moreover if the image is not taken straight the output may be
+                  wrong. In our technique we first check if the image is
                   straight or rotated. If the image is rotated then we make it
                   straight and divide the text in many contours. We then segment
                   the words according to the threshold value of the page and
@@ -150,7 +205,7 @@ class Research extends React.Component {
               </ListItemText>
             </ListItem>
             <ListItem>
-              <ListItemIcon style={{ fontSize: 20 }}>4</ListItemIcon>
+              <ListItemIcon style={{ fontSize: 20 }}>3</ListItemIcon>
               <ListItemText>
                 <b className={classes.writings1}>
                   Dual-Sim

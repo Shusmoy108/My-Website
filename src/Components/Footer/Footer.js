@@ -45,10 +45,24 @@ class Footer extends Component {
         </Typography>
         <div className={classes.copyright}>
           <IconButton>
-            <GitHubIcon />
+            <a
+              href="https://github.com/Shusmoy108"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "inherit" }}
+            >
+              <GitHubIcon />
+            </a>
           </IconButton>
           <IconButton>
-            <LinkedInIcon />
+            <a
+              href="https://www.linkedin.com/in/shusmoy-chowdhury-889b95139"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "inherit" }}
+            >
+              <LinkedInIcon />
+            </a>
           </IconButton>
         </div>
 

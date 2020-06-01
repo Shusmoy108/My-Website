@@ -83,7 +83,7 @@ class Mobileprojects extends React.Component {
                   promotions through this application. The prototype is inspired
                   by ”StarBucks App”.You can find the project code{" "}
                   <a
-                    href="https://github.com/Shusmoy108/Hotel-Management"
+                    href="https://github.com/Shusmoy108/coffee-shop"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -117,6 +117,17 @@ class Mobileprojects extends React.Component {
               </ListItemText>
             </ListItem>
           </List>
+          <div className={classes.footer}>
+            NB: You can run this application on your android phone. The APK of
+            this application will be found{" "}
+            <a
+              href="https://drive.google.com/drive/folders/17l6oiTXDcWW5zJq_OqaQdQuSjyqI7Xj9?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              here.
+            </a>
+          </div>
         </div>
       </div>
     );

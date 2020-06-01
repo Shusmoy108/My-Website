@@ -1,6 +1,19 @@
 const styles = (theme) => ({
-  root: { display: "flex", marginLeft: "5%", marginTop: "2%" },
-  root2: { flex: 5, marginRight: "5%" },
+  root: {
+    display: "block",
+    //marginLeft: "5%",
+    margin: "70px 5% 5% 5%",
+
+    [theme.breakpoints.up("sm")]: {
+      display: "flex",
+      marginLeft: "5%",
+      marginTop: "2%",
+    },
+  },
+  root2: {
+    flex: 5,
+    //marginRight: "5%",
+  },
   img: {
     flex: 2,
     marginRight: "2%",
@@ -8,8 +21,16 @@ const styles = (theme) => ({
   grow: {
     flexGrow: 1,
   },
+  footer: {
+    fontFamily: "Cinzel",
+    fontSize: 15,
+    [theme.breakpoints.up("md")]: {
+      fontSize: 20,
+    },
+  },
   body: {
     fontSize: 12,
+    textAlign: "justify",
     [theme.breakpoints.up("sm")]: {
       fontSize: 15,
     },
