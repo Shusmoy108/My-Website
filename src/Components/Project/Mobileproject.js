@@ -118,8 +118,8 @@ class Mobileprojects extends React.Component {
             </ListItem>
           </List>
           <div className={classes.footer}>
-            NB: You can run this application on your android phone. The APK of
-            this application will be found{" "}
+            NB: You can run this applications on your android phone. The APK of
+            this applications will be found{" "}
             <a
               href="https://drive.google.com/drive/folders/17l6oiTXDcWW5zJq_OqaQdQuSjyqI7Xj9?usp=sharing"
               target="_blank"

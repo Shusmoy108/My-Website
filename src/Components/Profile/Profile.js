@@ -85,7 +85,7 @@ class Profile extends React.Component {
           <Divider></Divider>
           <div className={classes.skill}>
             <b>Programming Languages : </b>
-            Python, Java,JavaScript, C, C++, Assembly, DART.
+            Python, Java, JavaScript, C, C++, Assembly, DART.
           </div>
           <div className={classes.skill}>
             <b>Framework : </b>
@@ -94,11 +94,11 @@ class Profile extends React.Component {
           </div>
           <div className={classes.skill}>
             <b>Database : </b>
-            Relational Database, SQL Database, NoSQL Database, PostGRE SQL .
+            Relational Database, SQL Database, NoSQL Database, PostGRE SQL.
           </div>
           <div className={classes.skill}>
             <b>Scripting Languages : </b>
-            LaTeX, Shell Scripts(Linux) .
+            LaTeX, Shell Scripts(Linux).
           </div>
           <Typography variant="h5" className={classes.title}>
             Training
