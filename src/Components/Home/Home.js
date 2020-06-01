@@ -27,23 +27,41 @@ class Home extends React.Component {
           <Divider></Divider>
           <Typography variant="body1" className={classes.writings1}>
             My name is Shusmoy Chowdhury. I have completed my Bachelor in
-            Science in Computer Science and Engineering from Bangladesh
-            University of Enigineering and Technology on October 2018. After my
-            graduation I had joined as a full stack developer in startup company
-            named "BigGO Limited". At present I am serving as a Faculty member
-            of Souther University Bangladesh in Chittagong. I am always keen to
-            explore new fields of Computer Science. My research interest mainly
-            consists Software Engineering, Human Computer Interaction, Software
-            Development, Health Informatics using Softwares. In my software
-            research I am working with data mining and API anlayzing. I have
-            worked in finding necessary data from websites using web crawling.
-            Also I have also working with differnt datasets to find data pattern
-            from the various kind of data. I am trying to combine the software
-            Engineering and Human computer interaction. I am trying analyze the
-            Human Psychology based on the software uses. We can detect the
-            different community based on the different software uses of the
-            user.In leisure time I work in devlopment of different kind of
-            softwares. Some of my work can be found in my{" "}
+            Science in Computer Science and Engineering from{" "}
+            <a
+              href="https://www.buet.ac.bd/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ textDecoration: "none" }}
+            >
+              Bangladesh University of Enigineering and Technology
+            </a>{" "}
+            Bangladesh University of Enigineering and Technology on October
+            2018. After my graduation I had joined as a full stack developer in
+            startup company named "BigGO Limited". At present I am serving as a
+            Faculty member of{" "}
+            <a
+              href="https://www.southern.edu.bd/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ textDecoration: "none" }}
+            >
+              Southern University Bangladesh
+            </a>{" "}
+            in Chittagong. I am always keen to explore new fields of Computer
+            Science. My research interest mainly consists Software Engineering,
+            Human Computer Interaction, Software Development, Health Informatics
+            using Softwares. In my software research I am working with data
+            mining and API anlayzing. I have worked in finding necessary data
+            from websites using web crawling. Also I have also working with
+            different datasets to find data patterns from the various kind of
+            data. I am trying to combine the idea of both software Engineering
+            and Human computer interaction. I am trying analyze the Human
+            Psychology based on the software uses. We can detect the different
+            community based on the different software uses of the user. Recently
+            I have started working with blockchain technology and
+            cryptocurrency. In leisure time I work in devlopment of different
+            kind of softwares. Some of my work can be found in my{" "}
             <a
               href="https://github.com/Shusmoy108"
               target="_blank"

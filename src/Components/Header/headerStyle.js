@@ -37,8 +37,8 @@ const styles = (theme) => ({
     },
   },
   large: {
-    width: theme.spacing(10),
-    height: theme.spacing(10),
+    width: theme.spacing(15),
+    height: theme.spacing(15),
   },
   avater: {
     flex: 1,
@@ -53,6 +53,18 @@ const styles = (theme) => ({
     textAlign: "center",
     marginBottom: 10,
     fontSize: 15,
+  },
+  name: {
+    fontFamily: "Cinzel",
+
+    color: "black",
+    textAlign: "center",
+    marginBottom: 5,
+    marginTop: 5,
+    fontSize: 12,
+  },
+  content: {
+    flexGrow: 0,
   },
   list: {
     display: "flex",

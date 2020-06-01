@@ -1,10 +1,19 @@
 const styles = (theme) => ({
-  root: { display: "flex", marginLeft: "5%", marginTop: "2%" },
+  root: {
+    display: "block",
+    margin: "70px 5% 5% 5%",
+
+    [theme.breakpoints.up("sm")]: {
+      display: "flex",
+      marginLeft: "5%",
+      marginTop: "2%",
+    },
+  },
   img: {
     display: "none",
     [theme.breakpoints.up("sm")]: {
       display: "block",
-      flex: "1",
+      flex: 1,
     },
   },
   grow: {
@@ -12,7 +21,10 @@ const styles = (theme) => ({
   },
   writings: {
     flex: 3,
-    marginLeft: "5%",
+    [theme.breakpoints.up("sm")]: {
+      marginLeft: "5%",
+    },
+    //marginLeft: "5%",
   },
   title: {
     fontFamily: "Cinzel",

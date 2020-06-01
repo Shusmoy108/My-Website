@@ -13,7 +13,7 @@ class Profile extends React.Component {
       <div className={classes.root}>
         <div className={classes.grow}></div>
         <div className={classes.root2}>
-          <Typography variant="h5" className={classes.title}>
+          <Typography variant="h5" className={classes.title1}>
             Work Experience
           </Typography>
           <Divider></Divider>

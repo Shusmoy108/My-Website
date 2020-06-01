@@ -1,8 +1,13 @@
 const styles = (theme) => ({
   root: {
-    display: "flex",
-    marginLeft: "5%",
-    marginTop: "2%",
+    display: "block",
+    margin: "70px 5% 5% 5%",
+
+    [theme.breakpoints.up("sm")]: {
+      display: "flex",
+      //marginLeft: "5%",
+      marginTop: "2%",
+    },
   },
   grow: {
     flexGrow: 1,

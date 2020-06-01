@@ -1,9 +1,27 @@
 const styles = (theme) => ({
-  root: { display: "flex", marginLeft: "5%", marginTop: "2%" },
-  root2: { flex: 5, marginRight: "5%" },
+  root: {
+    display: "block",
+    //marginLeft: "5%",
+    margin: "70px 5% 5% 5%",
+
+    [theme.breakpoints.up("sm")]: {
+      display: "flex",
+      marginLeft: "5%",
+      marginTop: "2%",
+    },
+  },
+  root2: {
+    flex: 5,
+    marginRight: "5%",
+  },
   img: {
-    flex: 2,
-    marginRight: "2%",
+    display: "none",
+
+    [theme.breakpoints.up("sm")]: {
+      display: "block",
+      flex: 2,
+      marginRight: "2%",
+    },
   },
   grow: {
     flexGrow: 1,
@@ -15,6 +33,14 @@ const styles = (theme) => ({
     fontFamily: "Cinzel",
     fontSize: 20,
     marginTop: "2%",
+    [theme.breakpoints.up("md")]: {
+      fontSize: 25,
+    },
+  },
+  title1: {
+    fontFamily: "Cinzel",
+    fontSize: 20,
+    // marginTop: "2%",
     [theme.breakpoints.up("md")]: {
       fontSize: 25,
     },

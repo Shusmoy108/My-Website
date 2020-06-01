@@ -64,7 +64,22 @@ class Teaching extends React.Component {
                 the prescription or text file. He can also place his order
                 randomly. Any medicine shop owner can accept his order by
                 checking the availability of the medicine. We are following
-                techniques used in UBER for this app.
+                techniques used in UBER for this app. The demo link of the
+                project is{" "}
+                <a
+                  href="http://homepharma.unaux.com/ "
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  here.
+                  <br />
+                </a>
+                We have also designed am admin panel for the pharmacy owner.
+                They can accept the orders, update their pharmacy status(like
+                medicine available, update price etc). They can also see the
+                monthly or yearly revenue of the pharmacy through ours system.
+                One can easily maintain a pharmacy chain store through using our
+                software.
               </div>
             </div>
           </div>

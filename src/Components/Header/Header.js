@@ -21,6 +21,7 @@ import {
   Popover,
   MenuItem,
   Avatar,
+  Divider,
 } from "@material-ui/core";
 import Profile from "../Profile/Profile";
 import Teaching from "../Teaching/Teaching";
@@ -118,7 +119,7 @@ class Header extends React.Component {
             </Button>
           </Toolbar>
         </AppBar>
-        <AppBar position="static" className={classes.sectionMobile}>
+        <AppBar position="fixed" className={classes.sectionMobile}>
           <Toolbar style={{ display: "flex" }}>
             <Button
               className={classes.menu}
@@ -132,6 +133,7 @@ class Header extends React.Component {
               Shusmoy Chowdhury
             </Typography>
           </Toolbar>
+
           <Drawer
             anchor="left"
             open={anchor}
@@ -145,12 +147,14 @@ class Header extends React.Component {
                 className={classes.large}
               />
             </div>
+            <div className={classes.name}>Shusmoy Chowdhury</div>
+            <Divider />
             <List
               style={{
                 flex: 10,
               }}
             >
-              <ListItem>
+              <ListItem className={classes.list}>
                 <Button
                   className={classes.listItem}
                   onClick={() => this.handlePage(0)}
@@ -158,7 +162,7 @@ class Header extends React.Component {
                   Home
                 </Button>
               </ListItem>
-              <ListItem>
+              <ListItem className={classes.list}>
                 <Button
                   className={classes.listItem}
                   onClick={() => this.handlePage(1)}
@@ -166,7 +170,7 @@ class Header extends React.Component {
                   Profile
                 </Button>
               </ListItem>
-              <ListItem>
+              <ListItem className={classes.list}>
                 <Button
                   className={classes.listItem}
                   onClick={() => this.handlePage(2)}
@@ -174,7 +178,7 @@ class Header extends React.Component {
                   Research
                 </Button>
               </ListItem>
-              <ListItem>
+              <ListItem className={classes.list}>
                 <Button
                   className={classes.listItem}
                   onClick={() => this.handlePage(3)}
@@ -185,14 +189,15 @@ class Header extends React.Component {
               <ListItem>
                 <ExpansionPanel style={{ boxShadow: "none" }}>
                   <ExpansionPanelSummary
-                    expandIcon={<ExpandMoreIcon />}
                     style={{ padding: 0 }}
+                    classes={{ content: classes.content }}
                   >
                     <Button
                       className={classes.listItem}
                       //onClick={() => this.handleOpen()}
                     >
                       Project
+                      <ExpandMoreIcon />
                     </Button>
                   </ExpansionPanelSummary>
                   <ExpansionPanelDetails style={{ padding: 0 }}>
@@ -226,7 +231,7 @@ class Header extends React.Component {
                 </ExpansionPanel>
               </ListItem>
 
-              <ListItem>
+              <ListItem className={classes.list}>
                 <Button
                   className={classes.listItem}
                   onClick={() => this.handlePage(7)}
