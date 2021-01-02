@@ -75,7 +75,7 @@ class Footer extends Component {
           }}
         />
         <Typography className={classes.copyright}>
-          @Copyright Shusmoy Chowdhury 2020
+          @Copyright Shusmoy Chowdhury 2021
         </Typography>
       </div>
     );
