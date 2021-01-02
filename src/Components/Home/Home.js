@@ -26,7 +26,7 @@ class Home extends React.Component {
           </Typography>
           <Divider></Divider>
           <Typography variant="body1" className={classes.writings1}>
-            My name is Shusmoy Chowdhury. I have completed my Bachelor in
+            My name is Shusmoy Chowdhury. I have completed my Bachelor of
             Science in Computer Science and Engineering from{" "}
             <a
               href="https://www.buet.ac.bd/"

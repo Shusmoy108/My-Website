@@ -118,24 +118,20 @@ class Research extends React.Component {
                   Every Project has a unique structure. The project manager or
                   leader is always responsible for the structure of the
                   project.Every project manager needs a suprime freedom of
-                  choice for their project structure design as every project is
-                  unique comparing to other. In our software we have tried to
-                  give such freedom to the user. We have divided every project
-                  into task and every task into subtask. In our project we can
-                  add more depth according to user specification.At first The
-                  project lead will create a project structure with different
-                  number of task and every task with various number of subtask.
-                  For the subtask we have introduced here 4 types of fields such
-                  as text, number, checkbox, dropdown list. More types such as
-                  image videos files can be added according to user
-                  specification. After designing the project structure user can
-                  create project based on this project stracture and assignerd
-                  task and subtask according to theor requsition. The project
-                  lead can also check the current status of the project(how much
-                  has been completed) here. He can also rerun a faulty project
-                  and also findout the fault through the system. In the end we
-                  can say this system as a user specific generic project
-                  management software. You can find all the detailed features{" "}
+                  choice for their project structure design. In our software we
+                  have tried to give such freedom to the user. We have divided
+                  every project into task and every task into subtask. In our
+                  project we can add more depth according to user specification.
+                  At first The project lead will create a project structure with
+                  different number of task and every task with various number of
+                  subtask. After designing the project structure user can create
+                  project based on this project stracture and assigned task and
+                  subtask according to theor requisition. The project lead can
+                  also check the current status of the project(how much has been
+                  completed) here. He can also rerun a faulty project and also
+                  findout the fault through the system. In the end we can say
+                  this system as a user specific generic project management
+                  software. You can find all the detailed features{" "}
                   <a href={protrack} target="_blank" rel="noopener noreferrer">
                     here.
                     <br />
@@ -159,40 +155,19 @@ class Research extends React.Component {
                 <Typography variant="body1" className={classes.body}>
                   Now a Days Bengali is one of the most spoken language in the
                   world. Around 200 million people all over the world have been
-                  speaking in this language.Being the 5th Position and sweetest
-                  language in the world declared by the UNESCO Bengali is the
-                  national language in Bangladesh and one of the major languages
-                  in India. Bangla is a rich and old language. Converting hard
-                  document, such as newspaper, printed book into editable text
-                  to modify or extend is the normal practice nowadays, OCR is
-                  the process of converting printed text images into editable
-                  text. In our thesis work we have tried to make a complete
-                  Optical Character Recognition for Bangla Text. In our first
-                  thesis work we have introduced a new segmentation technique
-                  for bangla text. The segmentation of bangla text is not easy
-                  as other language because of many connecting word in bangla.
-                  Moreover if the image is not taken straight the output may be
-                  wrong. In our technique we first check if the image is
-                  straight or rotated. If the image is rotated then we make it
-                  straight and divide the text in many contours. We then segment
-                  the words according to the threshold value of the page and
-                  ignore the noise and punctuation of the page. Our technique
-                  has given a 95% accuracy in segmenting bangla text For
-                  generating text from the segmented words we use Convolution
-                  Neural Network. At first we used no layer connected
-                  Convolution Neural Network. But we got a poor accuracy of 45%
-                  in this technique. Then we used fully connected Convolution
-                  Layer with stride and dropout. We have used a lot of
-                  activation function in our CNN to increase the accuracy level.
-                  The Relu and No activation function has given a good accuracy
-                  in CNN. We also used softmax cross entropy with logits as cost
-                  function in the CNN. We used Stochastic gradient descent as
-                  the optimizer in the CNN. We trained the machine with 1023
-                  classes each having 50 different images of different fonts.
-                  Our CNN has given an accuracy of 90.1%. We also used Recurrent
-                  Neural Network to validate the sentences if they are grammati-
-                  cally right or wrong. We LSTM cells in RNN to validate the
-                  sentences. The complete research can be found{" "}
+                  speaking in this language. In our thesis work we have tried to
+                  make a complete Optical Character Recognition for Bangla Text.
+                  In our first thesis work we have introduced a new segmentation
+                  technique for bangla text. Our technique has given a 95%
+                  accuracy in segmenting bangla text. For generating text from
+                  the segmented words we use Convolution Neural Network We used
+                  fully connected Convolution Layer with stride and dropout.We
+                  trained the machine with 1023 classes each having 50 different
+                  images of different fonts. Our CNN has given an accuracy of
+                  90.1%. We also used Recurrent Neural Network to validate the
+                  sentences if they are grammatically right or wrong. We LSTM
+                  cells in RNN to validate the sentences. The complete research
+                  can be found{" "}
                   <a
                     href="https://github.com/Shusmoy108/OCR"
                     target="_blank"

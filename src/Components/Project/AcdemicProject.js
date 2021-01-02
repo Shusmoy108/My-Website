@@ -43,11 +43,13 @@ class AcademicProject extends React.Component {
                   Technology: JAVA Spring Boot, Oracle{" "}
                 </b>
                 <Typography variant="body1" className={classes.body}>
-                  The rental system will be like a social media where the users
-                  are the tenant and plat owner. the communication will be very
-                  easy between them. There is also an advertisement section for
-                  the plat owners. The tenant can easily book plat from this
-                  site and can also rate his current plat
+                  The home rental system will be like a social media for the
+                  tenant and flat owner so that the communication between them
+                  will be very easy. Owners can be easily notify tenants with
+                  various notification and tenant can also send their complain
+                  through the system. There is also an advertisement section for
+                  the flat owners. The tenant can easily book plat from this
+                  site and can also rate his current flat.
                 </Typography>
               </ListItemText>
             </ListItem>
