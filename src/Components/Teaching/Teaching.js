@@ -20,7 +20,7 @@ class Teaching extends React.Component {
             <div className={classes.element}>
               <div className={classes.courceCode}>CS 2210</div>
               <div className={classes.courceName}>
-              )Algorithm Design and Analysis(with Sessional)
+              Algorithm Design and Analysis(with Sessional)
               </div>
             </div>
 
