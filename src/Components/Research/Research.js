@@ -25,11 +25,29 @@ class Research extends React.Component {
           </Typography>
           <Divider></Divider>
           <List>
+          <ListItem>
+              <ListItemIcon style={{ fontSize: 20 }}>1</ListItemIcon>
+              <ListItemText>
+                <b className={classes.writings1}>
+                Child Tracking and Hidden Activities Observation System through Mobile App(Accepted-2021)
+                  <br />
+                </b>
+                <b className={classes.writings2}>
+                  Author: Mohammad Jahangir Alam, Tanjia Chowdhury, Sohrab Hossain, Shusmoy Chowdhury and Tanmoy Das
+                </b><br />
+                <b className={classes.writings2}>
+                  Journal: Indonesian Journal of Electrical Engineering and Computer Science
+                </b>
+                <Typography variant="body1" className={classes.body}>
+                The world is changing rapidly due to information technology and all the people around the world are too much busy with their jobs, business, etc. to adjust to this race.Now, parents are giving more time at their business, office, jobs, etc. instead of passing time at home, but they always get worried and scared about their children due to abuse of Information Technology and law and order situation of the country. So parents are wanted to track and monitor their child’s activities and location from anywhere to resolve their pressure. But this is not possible for every parent to monitor their child physically due to many reasons. To solve the problem, this paper presents a system that will help parents to keep monitoring their child activities from anywhere using a mobile phone. This android app uses GPS and Mobile services to find the child location also it secretly stored all the call logs, SMS logs, contact lists, and accurate locations without knowing the children. Children assume that they are using Facebook, browsing the net or watching videos from youtube. It will not hamper any activities of the child. Parents can check all the activities of children using this app. 
+                </Typography>
+              </ListItemText>
+            </ListItem>
             <ListItem>
               <ListItemIcon style={{ fontSize: 20 }}>1</ListItemIcon>
               <ListItemText>
                 <b className={classes.writings1}>
-                Smart Door Unlock System with Android App(Under Review)
+                Smart Door Unlock System with Android App(Under Review-2021)
                   <br />
                 </b>
                 <b className={classes.writings2}>
