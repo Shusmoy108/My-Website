@@ -44,7 +44,7 @@ class Research extends React.Component {
               </ListItemText>
             </ListItem>
             <ListItem>
-              <ListItemIcon style={{ fontSize: 20 }}>1</ListItemIcon>
+              <ListItemIcon style={{ fontSize: 20 }}>2</ListItemIcon>
               <ListItemText>
                 <b className={classes.writings1}>
                 Smart Door Unlock System with Android App(Under Review-2021)
@@ -63,7 +63,7 @@ class Research extends React.Component {
             </ListItem>
 
             <ListItem>
-              <ListItemIcon style={{ fontSize: 20 }}>2</ListItemIcon>
+              <ListItemIcon style={{ fontSize: 20 }}>3</ListItemIcon>
               <ListItemText>
                 <b className={classes.writings1}>
                 A Smart Security Solution to Prevent any Mischief with the Vehicles
