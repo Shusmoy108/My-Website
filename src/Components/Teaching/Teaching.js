@@ -13,6 +13,32 @@ class Teaching extends React.Component {
         
         <div className={classes.body}>
         <Typography variant="h5" className={classes.title}>
+            Spring 2021
+          </Typography>
+          <Divider></Divider>
+          <div className={classes.elementRoot}>
+            <div className={classes.element}>
+              <div className={classes.courceCode}>CS 2210</div>
+              <div className={classes.courceName}>
+              Algorithm Design and Analysis(with Sessional)
+              </div>
+            </div>
+
+            <div className={classes.element}>
+              <div className={classes.courceCode}>CS 4103</div>
+              <div className={classes.courceName}>
+                Computer Graphics(with Sessional)
+              </div>
+            </div>
+            <div className={classes.element}>
+              <div className={classes.courceCode}>CS 2207</div>
+              <div className={classes.courceName}>
+             Data Structure(with Sessional)
+              </div>
+            </div>
+           
+          </div>
+        <Typography variant="h5" className={classes.title}>
             Fall 2020
           </Typography>
           <Divider></Divider>

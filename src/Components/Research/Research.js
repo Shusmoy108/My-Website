@@ -32,9 +32,7 @@ class Research extends React.Component {
                 Child Tracking and Hidden Activities Observation System through Mobile App(Accepted-2021)
                   <br />
                 </b>
-                <b className={classes.writings2}>
-                  Author: Mohammad Jahangir Alam, Tanjia Chowdhury, Sohrab Hossain, Shusmoy Chowdhury and Tanmoy Das
-                </b><br />
+               
                 <b className={classes.writings2}>
                   Journal: Indonesian Journal of Electrical Engineering and Computer Science
                 </b>
@@ -47,33 +45,12 @@ class Research extends React.Component {
               <ListItemIcon style={{ fontSize: 20 }}>2</ListItemIcon>
               <ListItemText>
                 <b className={classes.writings1}>
-                Smart Door Unlock System with Android App(Under Review-2021)
-                  <br />
-                </b>
-                <b className={classes.writings2}>
-                  Author: Jeenat Sultana, Shusmoy Chowdhury,Moynul Hasan Tushar and Md.Hemayet Uddin
-                </b><br />
-                <b className={classes.writings2}>
-                  Journal: International Journal of Advanced Science and Technology
-                </b>
-                <Typography variant="body1" className={classes.body}>
-                A room is secured when it is locked and especially when the lock is ensured not to unlock by an unauthorized person. There are many methods to lock and unlock a door such as face detection, voice recognition, speech recognition, use of password and pin code, biometric technology etc. where each method serves the purpose of digital keys. As the availability of android devices are increasing day by day, the digital keys are working by means of android apps. We implemented our system to accomplish two purposes. One is to assure authorization i.e. no unauthorized user can get access to the secured room. The other one is to transfer the authorization to an unauthorized person who needs the permission to access in case of emergency. To meet the first goal, we used face detection and speech recognition and used random one-time password for the second one. Both the ways are implemented in android apps and connected to the Arduino Nano via Bluetooth module. Additional devices were used to strengthen the security of the system by detecting forceful attack by the intruders. Our objective was to design the system with enhanced security and affordable cost
-                </Typography>
-              </ListItemText>
-            </ListItem>
-
-            <ListItem>
-              <ListItemIcon style={{ fontSize: 20 }}>3</ListItemIcon>
-              <ListItemText>
-                <b className={classes.writings1}>
                 A Smart Security Solution to Prevent any Mischief with the Vehicles
                   <br />
                 </b>
+               
                 <b className={classes.writings2}>
-                  Author: Mohammad Jahangir Alam, Shusmoy Chowdhury, Dhiman Sarma, Sohrab Hossain, Anindita Chowdhury and Jia Raihan <br />
-                </b>
-                <b className={classes.writings2}>
-                  Conference: International Conference on Information and Communication Technology for Sustainable Development (ICICT4SD 2021) <br />
+                  Conference: International Conference on Information and Communication Technology for Sustainable Development (Accepted IEEE TENSYMP 2021) <br />
                 </b>
                 
                 <Typography variant="body1" className={classes.body}>
@@ -96,6 +73,24 @@ vehicle.
                 </Typography>
               </ListItemText>
             </ListItem>
+            <ListItem>
+              <ListItemIcon style={{ fontSize: 20 }}>3</ListItemIcon>
+              <ListItemText>
+                <b className={classes.writings1}>
+                Smart Door Unlock System with Android App(Under Review-2021)
+                  <br />
+                </b>
+               
+                <b className={classes.writings2}>
+                  Journal: International Journal of Advanced Science and Technology
+                </b>
+                <Typography variant="body1" className={classes.body}>
+                A room is secured when it is locked and especially when the lock is ensured not to unlock by an unauthorized person. There are many methods to lock and unlock a door such as face detection, voice recognition, speech recognition, use of password and pin code, biometric technology etc. where each method serves the purpose of digital keys. As the availability of android devices are increasing day by day, the digital keys are working by means of android apps. We implemented our system to accomplish two purposes. One is to assure authorization i.e. no unauthorized user can get access to the secured room. The other one is to transfer the authorization to an unauthorized person who needs the permission to access in case of emergency. To meet the first goal, we used face detection and speech recognition and used random one-time password for the second one. Both the ways are implemented in android apps and connected to the Arduino Nano via Bluetooth module. Additional devices were used to strengthen the security of the system by detecting forceful attack by the intruders. Our objective was to design the system with enhanced security and affordable cost
+                </Typography>
+              </ListItemText>
+            </ListItem>
+
+           
           </List>
           <Typography variant="h5" className={classes.title}>
             Current Research

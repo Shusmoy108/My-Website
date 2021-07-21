@@ -125,7 +125,7 @@ class Header extends React.Component {
               className={classes.menu}
               onClick={this.handleMenu}
               variant="outlined"
-              color="white"
+              color="default"
             >
               <MenuIcon />
             </Button>
