@@ -29,7 +29,8 @@ class Research extends React.Component {
               <ListItemIcon style={{ fontSize: 20 }}>1</ListItemIcon>
               <ListItemText>
                 <b className={classes.writings1}>
-                Child Tracking and Hidden Activities Observation System through Mobile App(Accepted-2021)
+                Child Tracking and Hidden Activities Observation System through Mobile App(Accepted-2021) <a href="http://ijeecs.iaescore.com/index.php/IJEECS/article/view/23612" target="_blank" rel="noopener noreferrer">[Paper Link]
+            </a>
                   <br />
                 </b>
                
