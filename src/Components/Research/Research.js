@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
 import styles from "./researchStyle";
 import protrack from "../../Assets/ProTrack.pdf";
+import smartdoor from "../../Assets/smartdoor.pdf";
 import {
   Typography,
   Divider,
@@ -78,7 +79,8 @@ vehicle.
               <ListItemIcon style={{ fontSize: 20 }}>3</ListItemIcon>
               <ListItemText>
                 <b className={classes.writings1}>
-                Smart Door Unlock System with Android App(Under Review-2021)
+                Smart Door Unlock System with Android App(Under Review-2021)<a href={smartdoor}>[Pre-Print Link]
+            </a>
                   <br />
                 </b>
                
