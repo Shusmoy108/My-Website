@@ -1,10 +1,12 @@
-import React from "react";
-import pp from "../../Assets/pp.jpg";
-import cv from "../../Assets/CV.pdf";
-import { CardMedia, Card, Typography, Divider } from "@material-ui/core";
-import { withStyles } from "@material-ui/core/styles";
-import styles from "./profileStyle";
-import PropTypes from "prop-types";
+/** @format */
+
+import React from 'react';
+import pp from '../../Assets/pp.jpg';
+import cv from '../../Assets/CV.pdf';
+import { CardMedia, Card, Typography, Divider } from '@material-ui/core';
+import { withStyles } from '@material-ui/core/styles';
+import styles from './profileStyle';
+import PropTypes from 'prop-types';
 
 class Profile extends React.Component {
   render() {
@@ -13,11 +15,25 @@ class Profile extends React.Component {
       <div className={classes.root}>
         <div className={classes.grow}></div>
         <div className={classes.root2}>
-          <Typography variant="h5" className={classes.title1}>
+          <Typography variant='h5' className={classes.title1}>
             Work Experience
           </Typography>
           <Divider></Divider>
-          <div style={{ display: "flex" }}>
+          <div style={{ display: 'flex' }}>
+            <div className={classes.writings}>
+              <Typography className={classes.writings1}>
+                Software Engineer(Lead)
+              </Typography>
+
+              <b className={classes.writings1}>Girmairi LLC</b>
+            </div>
+            <div className={classes.writings}>
+              <Typography variant='body1' className={classes.writings2}>
+                1st September 2021 -Present
+              </Typography>
+            </div>
+          </div>
+          <div style={{ display: 'flex' }}>
             <div className={classes.writings}>
               <Typography className={classes.writings1}>
                 Lecturer in Department of Computer Science and Engineering
@@ -28,12 +44,12 @@ class Profile extends React.Component {
               </b>
             </div>
             <div className={classes.writings}>
-              <Typography variant="body1" className={classes.writings2}>
-                7 April 2019 - Present
+              <Typography variant='body1' className={classes.writings2}>
+                7 April 2019 - 10th January 2022
               </Typography>
             </div>
           </div>
-          <div style={{ display: "flex" }}>
+          <div style={{ display: 'flex' }}>
             <div className={classes.writings}>
               <Typography className={classes.writings1}>
                 Full Stack Developer (Nodejs + React js)
@@ -42,65 +58,67 @@ class Profile extends React.Component {
               <b className={classes.writings1}>BigGO Limited</b>
             </div>
             <div className={classes.writings}>
-              <Typography variant="body1" className={classes.writings2}>
+              <Typography variant='body1' className={classes.writings2}>
                 5 April 2018 - 6 December 2018
               </Typography>
             </div>
           </div>
-          <Typography variant="h5" className={classes.title}>
+          <Typography variant='h5' className={classes.title}>
             Research Interest
           </Typography>
           <Divider></Divider>
-          <Typography variant="body1" className={classes.research}>
-            Software Engineering, Human Gesture Analysis, Research in UI/UX
-            designing, Data Science, API analysis, Image Processing, Machine
-            Learning,Testing software and Bug Fixing
+          <Typography variant='body1' className={classes.research}>
+            Software Engineering, Cloud Computing, Load Balancing, Datacenter
+            Selection Policy
           </Typography>
-          <Typography variant="h5" className={classes.title}>
+          <Typography variant='h5' className={classes.title}>
             Education
           </Typography>
           <Divider></Divider>
           <b className={classes.writings1}>
+            Master's of Science in Computer Science
+          </b>
+          <Typography variant='body1' className={classes.writings1}>
+            Missouri State University, Springfield, USA
+          </Typography>
+          <b className={classes.writings1}>
             Bachelor of Science in Computer Science and Engineering
           </b>
-          <Typography variant="body1" className={classes.writings1}>
-            Bangladesh University of Engineering and Technology, BUET, Dhaka
+          <Typography variant='body1' className={classes.writings1}>
+            Bangladesh University of Engineering and Technology, Dhaka,
+            Bangladesh
           </Typography>
-          <b v className={classes.writings1}>
-            Higher Secondary School Certificate in Science Group
-          </b>
-          <Typography variant="body1" className={classes.writings1}>
-            Chittagong College, Chittagong
-          </Typography>
-
-          <b className={classes.writings1}>
-            Secondary School Certificate in Science Group
-          </b>
-          <Typography variant="body1" className={classes.writings1}>
-            Chittagong Goverment High School, Chittagong
-          </Typography>
-          <Typography variant="h5" className={classes.title}>
+          <Typography variant='h5' className={classes.title}>
             Skills
           </Typography>
           <Divider></Divider>
           <div className={classes.skill}>
             <b>Programming Languages : </b>
-            Python, Java, JavaScript, C, C++, Assembly, DART.
+            JavaScript,Python, Java, Dart, C, C++, Assembly, SQL, LaTeX.
           </div>
           <div className={classes.skill}>
             <b>Framework : </b>
-            Flutter,Android, Django, Nodejs, React js,React native, Spring MVC,
-            Spring Boot.
+            Nodejs, React js, Android, Django, Flutter, Spring MVC, Spring Boot.
           </div>
           <div className={classes.skill}>
             <b>Database : </b>
-            Relational Database, SQL Database, NoSQL Database, PostGRE SQL.
+            Oracle, MySQL, MongoDB, Firebase.(Expertise in both relational SQL
+            database and NoSQL database.)
+          </div>
+          <div className={classes.skill}>
+            <b>Dev Ops : </b>
+            CI/CD Pipeline(Jenkins, Bitbucket, Codepipeline), EC2, Route 53,
+            ACM, WAF, S3, Cloudfront, Code deploy, Elastic Beanstalk.
+          </div>
+          <div className={classes.skill}>
+            <b>Applications: : </b>
+            Visual Studio, Git, MySQL, Oracle 11g, Matlab.
           </div>
           <div className={classes.skill}>
             <b>Scripting Languages : </b>
             LaTeX, Shell Scripts(Linux).
           </div>
-          <Typography variant="h5" className={classes.title}>
+          <Typography variant='h5' className={classes.title}>
             Training
           </Typography>
           <Divider></Divider>
@@ -112,7 +130,7 @@ class Profile extends React.Component {
             Trainer: Dr. Desmond Devendran Alexander
           </b>
 
-          <Typography variant="h5" className={classes.title}>
+          <Typography variant='h5' className={classes.title}>
             Extra-Activities
           </Typography>
           <Divider></Divider>
@@ -138,13 +156,13 @@ class Profile extends React.Component {
             </b>
             It is a blood donation organization in BUET.
           </div>
-          <Typography variant="h5" className={classes.title}>
+          <Typography variant='h5' className={classes.title}>
             CV/Resume
           </Typography>
           <Divider></Divider>
           <div className={classes.skill}>
-            You can find my complete CV{" "}
-            <a href={cv} target="_blank" rel="noopener noreferrer">
+            You can find my complete CV{' '}
+            <a href={cv} target='_blank' rel='noopener noreferrer'>
               here
             </a>
           </div>
@@ -155,7 +173,7 @@ class Profile extends React.Component {
               style={{ height: 400 }}
               //className={classes.media}
               image={pp}
-              title="Contemplative Reptile"
+              title='Contemplative Reptile'
             />
           </Card>
         </div>
