@@ -58,7 +58,7 @@ class Footer extends Component {
           </IconButton>
           <IconButton>
             <a
-              href='https://www.linkedin.com/in/shusmoy-chowdhury-889b95139'
+              href='https://www.linkedin.com/in/shusmoy-chowdhury'
               target='_blank'
               rel='noopener noreferrer'
               style={{ color: 'inherit' }}
@@ -77,7 +77,7 @@ class Footer extends Component {
           }}
         />
         <Typography className={classes.copyright}>
-          @Copyright Shusmoy Chowdhury 2022
+          @Copyright Shusmoy Chowdhury {new Date().getFullYear()}
         </Typography>
       </div>
     );

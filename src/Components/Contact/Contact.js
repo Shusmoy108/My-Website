@@ -21,16 +21,16 @@ class Contact extends React.Component {
             Shusmoy Chowdhury
           </Typography>
           <Typography variant='body1' className={classes.writing}>
-            Lecturer, Department of Computer Science and Engineering
+          Graduate Assistant, Department of Computer Science
           </Typography>
           <Typography variant='body1' className={classes.writing}>
-            Southern University Bangladesh, Chittagong, Bangladesh.
+          Missouri State University, Springfield, USA.
           </Typography>
           <Typography variant='body1' className={classes.writing}>
             Email: shusmoychowdhury.personal@gmail.com
           </Typography>
           <Typography variant='body1' className={classes.writing}>
-            Contact Number: +880 1819648302
+            Contact Number: +1-417-576-4827
           </Typography>
         </div>
         <div className={classes.grow}></div>

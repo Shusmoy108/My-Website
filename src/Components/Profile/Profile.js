@@ -15,6 +15,54 @@ class Profile extends React.Component {
       <div className={classes.root}>
         <div className={classes.grow}></div>
         <div className={classes.root2}>
+        <Typography variant='h5' className={classes.title}>
+            Education
+          </Typography>
+          <Divider></Divider>
+          <b className={classes.writings1}>
+            Master's of Science in Computer Science
+          </b>
+          <Typography variant='body1' className={classes.writings1}>
+            Missouri State University, Springfield, USA
+          </Typography>
+          <b className={classes.writings1}>
+            Bachelor of Science in Computer Science and Engineering
+          </b>
+          <Typography variant='body1' className={classes.writings1}>
+            Bangladesh University of Engineering and Technology, Dhaka,
+            Bangladesh
+          </Typography>
+          <Typography variant='h5' className={classes.title}>
+            Skills
+          </Typography>
+          <Divider></Divider>
+          <div className={classes.skill}>
+            <b>Programming Languages : </b>
+            JavaScript,Python, Java, Dart, C, C++, Assembly, SQL, LaTeX.
+          </div>
+          <div className={classes.skill}>
+            <b>Framework : </b>
+            Nodejs, React js, Android, Django, Flutter, Spring MVC, Spring Boot.
+          </div>
+          <div className={classes.skill}>
+            <b>Database : </b>
+            Oracle, MySQL, MongoDB, Firebase.(Expertise in both relational SQL
+            database and NoSQL database.)
+          </div>
+          <div className={classes.skill}>
+            <b>Dev Ops : </b>
+            CI/CD Pipeline(Jenkins, Bitbucket, Codepipeline), EC2, Route 53,
+            ACM, WAF, S3, Cloudfront, Code deploy, Elastic Beanstalk.
+          </div>
+          <div className={classes.skill}>
+            <b>Applications: : </b>
+            Visual Studio, Git, MySQL, Oracle 11g, Matlab.
+          </div>
+          <div className={classes.skill}>
+            <b>Scripting Languages : </b>
+            LaTeX, Shell Scripts(Linux).
+          </div>
+          <br/>
           <Typography variant='h5' className={classes.title1}>
             Work Experience
           </Typography>
@@ -71,53 +119,7 @@ class Profile extends React.Component {
             Software Engineering, Cloud Computing, Load Balancing, Datacenter
             Selection Policy
           </Typography>
-          <Typography variant='h5' className={classes.title}>
-            Education
-          </Typography>
-          <Divider></Divider>
-          <b className={classes.writings1}>
-            Master's of Science in Computer Science
-          </b>
-          <Typography variant='body1' className={classes.writings1}>
-            Missouri State University, Springfield, USA
-          </Typography>
-          <b className={classes.writings1}>
-            Bachelor of Science in Computer Science and Engineering
-          </b>
-          <Typography variant='body1' className={classes.writings1}>
-            Bangladesh University of Engineering and Technology, Dhaka,
-            Bangladesh
-          </Typography>
-          <Typography variant='h5' className={classes.title}>
-            Skills
-          </Typography>
-          <Divider></Divider>
-          <div className={classes.skill}>
-            <b>Programming Languages : </b>
-            JavaScript,Python, Java, Dart, C, C++, Assembly, SQL, LaTeX.
-          </div>
-          <div className={classes.skill}>
-            <b>Framework : </b>
-            Nodejs, React js, Android, Django, Flutter, Spring MVC, Spring Boot.
-          </div>
-          <div className={classes.skill}>
-            <b>Database : </b>
-            Oracle, MySQL, MongoDB, Firebase.(Expertise in both relational SQL
-            database and NoSQL database.)
-          </div>
-          <div className={classes.skill}>
-            <b>Dev Ops : </b>
-            CI/CD Pipeline(Jenkins, Bitbucket, Codepipeline), EC2, Route 53,
-            ACM, WAF, S3, Cloudfront, Code deploy, Elastic Beanstalk.
-          </div>
-          <div className={classes.skill}>
-            <b>Applications: : </b>
-            Visual Studio, Git, MySQL, Oracle 11g, Matlab.
-          </div>
-          <div className={classes.skill}>
-            <b>Scripting Languages : </b>
-            LaTeX, Shell Scripts(Linux).
-          </div>
+          
           <Typography variant='h5' className={classes.title}>
             Training
           </Typography>

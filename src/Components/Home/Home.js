@@ -26,6 +26,7 @@ class Home extends React.Component {
           </Typography>
           <Divider></Divider>
           <Typography variant="body1" className={classes.writings1}>
+            
             My name is Shusmoy Chowdhury. I have completed my Bachelor of
             Science in Computer Science and Engineering from{" "}
             <a
@@ -48,17 +49,33 @@ class Home extends React.Component {
             >
               Southern University Bangladesh
             </a>{" "}
-            in Chittagong. I am always keen to explore new fields of Computer
-            Science. My research interest mainly consists Software Engineering,
-            Human Computer Interaction, Software Development, Health Informatics
-            using Softwares. In my software research I am working with data
-            mining and API anlayzing. I have worked in finding necessary data
-            from websites using web crawling. Also I have also working with
-            different datasets to find data patterns from the various kind of
-            data. I am trying to combine the idea of both software Engineering
-            and Human computer interaction. I am trying analyze the Human
-            Psychology based on the software uses. We can detect the different
-            community based on the different software uses of the user. Recently
+            in Chittagong. I am always passionate about building new stuff. As a 
+            result I joined in the software industry as Software Engineer(Lead) {" "}
+            <a
+              href="https://www.girmairi.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ textDecoration: "none" }}
+            >
+               Girmairi LLC
+            </a>{" "}
+           . I am currently working here. I have worked in the software development as 
+           well as the deployment of the product. I am always keen to explore new
+            fields of Computer Science. So I went to pursue Master's of Computer Science degree
+             in {" "}
+             <a
+              href="https://missouristate.edu/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ textDecoration: "none" }}
+            >
+              Missouri State University
+            </a>{" "}
+             . I am admitted in a fully funded master's program by the department. 
+             I am doing my research on cloud computing specifically in Load Balancing 
+             and Datacenter Selection Policy. Currently I am residing in USA.
+              I am looking for full time software engineer positions in USA or Canada.
+               Recently
             I have started working with blockchain technology and
             cryptocurrency. In leisure time I work in devlopment of different
             kind of softwares. Some of my work can be found in my{" "}

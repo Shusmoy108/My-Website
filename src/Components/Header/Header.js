@@ -69,9 +69,9 @@ class Header extends React.Component {
             <Button className={classes.item} onClick={() => this.handlePage(2)}>
               Research
             </Button>
-            <Button className={classes.item} onClick={() => this.handlePage(3)}>
+            {/* <Button className={classes.item} onClick={() => this.handlePage(3)}>
               Teaching
-            </Button>
+            </Button> */}
             <Button
               className={classes.item}
               onClick={this.handleOpen}
